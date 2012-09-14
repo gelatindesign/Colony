@@ -2,6 +2,8 @@ h1. Colony
 
 A game about building a colony on Mars
 
+@version Alpha.0.0
+
 h2. Resources
 
 h3. Panda3D
