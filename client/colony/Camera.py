@@ -1,6 +1,6 @@
 # -------- Camera.py --------
 # Handles RTS-style camera movement; with pan, zoom & orbit
-# ------------------------
+# ---------------------------
 
 # Standard imports
 import math

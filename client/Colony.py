@@ -17,8 +17,7 @@ import colony.Config
 # Import app logic
 from colony.App import App
 from colony.Camera import CameraHandler
-from colony.Panda import Panda
-
+from colony.Terrain import Terrain
 
 
 # ------------------------ Panda3D Config ------------------------
@@ -26,20 +25,18 @@ from colony.Panda import Panda
 loadPrcFile("./config/config.prc")
 
 
-
 # ------------------------ Main ------------------------
 
 # Create app instance
 app = App( )
 
-# Add the panda
-p = Panda( )
+t = Terrain( )
 
 # Create the camera
 camera = CameraHandler( )
 
 # Set background colour
-base.setBackgroundColor( 1, 0.3, 0 )
+base.setBackgroundColor( 1, 0.1, 0 )
 
 # Set the app to run
 app.run( )

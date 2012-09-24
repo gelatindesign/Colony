@@ -1,6 +1,6 @@
 # -------- Panda.py --------
 # Handles being a panda
-# ------------------------
+# --------------------------
 
 # Panda3d imports
 from direct.actor.Actor import Actor
