@@ -8,16 +8,22 @@
 
 # ------------------------ Imports ------------------------
 
-# Panda3d imports
-from panda3d.core import loadPrcFile
-
 # Load config
 import colony.Config
+
+# Logging
+import logging
+import logging.config
+logging.config.fileConfig( 'config/logging.conf' )
+logger = logging.getLogger( 'root' )
+
+# Panda3d imports
+from panda3d.core import loadPrcFile
 
 # Import app logic
 from colony.App import App
 from colony.Camera import CameraHandler
-from colony.Terrain import Terrain
+from colony.world.Terrain import Terrain
 
 
 # ------------------------ Panda3D Config ------------------------
