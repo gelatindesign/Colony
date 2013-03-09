@@ -23,10 +23,16 @@ class Terrain( ):
 		test = GeoMipTerrain( "test" )
 
 		# Set the heightfield
-		test.setHeightField( "data/maps/test01.png" )
+		test.setHeightfield( "data/maps/test01.png" )
+
+		test.setBlockSize( 32 )
+		test.setNear( 40 )
+		test.setFar( 100 )
+		test.setFocalPoint( base.camera )
 
 		# Reparent to render
 		test.getRoot( ).reparentTo( render )
+		test.setSz( 100 )
 
 		# Generate terrain
 		test.generate( )

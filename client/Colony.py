@@ -42,7 +42,7 @@ t = Terrain( )
 camera = CameraHandler( )
 
 # Set background colour
-base.setBackgroundColor( 1, 0.1, 0 )
+base.setBackgroundColor( 0, 0, 0 )
 
 # Set the app to run
 app.run( )

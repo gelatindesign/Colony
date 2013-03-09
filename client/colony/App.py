@@ -6,7 +6,7 @@
 from direct.showbase.ShowBase import ShowBase
 
 # App imports
-from actor.Actor import Actor
+from actor.GenericActor import GenericActor
 
 # -------- App --------
 class App( ShowBase ):

@@ -1,4 +1,4 @@
-# -------- Actor.py --------
+# -------- GenericActor.py --------
 # Generic actor parent class
 # --------------------------
 
@@ -14,8 +14,8 @@ from panda3d.core import Point3
 # Colony imports
 import colony.Config
 
-# -------- Actor --------
-class Actor( direct.actor.Actor ):
+# -------- GenericActor --------
+class GenericActor( ):
 	uid = None
 	src = None
 	states = None
@@ -24,8 +24,8 @@ class Actor( direct.actor.Actor ):
 	#
 	# @param self
 	# @return void
-	def __init__( self, uid ):
-		self.uid = uid
+	def __init__( self ):
+		#self.uid = uid
 
 		if self.src == None:
 			logger.error( "No src given on actor {0}".format(self.uid) )
@@ -45,4 +45,4 @@ class Actor( direct.actor.Actor ):
 	# @param int distance
 	# @return void
 	def move( self, direction, distance ):
-		pos_interval = self.
+		pass

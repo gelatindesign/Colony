@@ -3,8 +3,8 @@
 # --------------------------
 
 # App imports
-import Actor
+import GenericActor
 
 # -------- Person --------
-class Person( Actor ):
+class Person( GenericActor ):
 	pass
